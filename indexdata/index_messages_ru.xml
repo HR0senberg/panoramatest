@@ -84,14 +84,14 @@
   <data name="ru_spotpoint238_tooltip"><![CDATA[14 Возвращение в родную гавань]]></data>
 
 
-	<data name="ru_spotmap349_tooltip"><![CDATA[1.Памятник противоракете В-1000]]></data>
-	<data name="ru_spotmap350_tooltip"><![CDATA[4Результат воздействия лазера на кирпич]]></data>
-	<data name="ru_spotmap351_tooltip"><![CDATA[6Москва-Приозерск (2)]]></data>
-	<data name="ru_spotmap352_tooltip"><![CDATA[7Главный конструктор]]></data>
-	<data name="ru_spotmap353_tooltip"><![CDATA[11Картины Юлия Цукова]]></data>
-	<data name="ru_spotmap354_tooltip"><![CDATA[12Ключ от полигона]]></data>
-	<data name="ru_spotmap355_tooltip"><![CDATA[13 ДОН-2Н]]></data>
-	<data name="ru_spotmap356_tooltip"><![CDATA[15]]></data>
+	<data name="ru_spotmap335_tooltip"><![CDATA[1.Памятник противоракете В-1000]]></data>
+	<data name="ru_spotmap336_tooltip"><![CDATA[4Результат воздействия лазера на кирпич]]></data>
+	<data name="ru_spotmap337_tooltip"><![CDATA[6Москва-Приозерск (2)]]></data>
+	<data name="ru_spotmap338_tooltip"><![CDATA[7Главный конструктор]]></data>
+	<data name="ru_spotmap339_tooltip"><![CDATA[11Картины Юлия Цукова]]></data>
+	<data name="ru_spotmap340_tooltip"><![CDATA[12Ключ от полигона]]></data>
+	<data name="ru_spotmap341_tooltip"><![CDATA[13 ДОН-2Н]]></data>
+	<data name="ru_spotmap342_tooltip"><![CDATA[15]]></data>
 
 
 
@@ -155,12 +155,12 @@
 
 
 
-  <data name="ru_spotpoint112_description"><![CDATA[			<br><br><b>Памятник противоракете В-1000</b><br><br> Выносной крупногабаритный музейный экспонат установлен на территории школы в ознаменование 55-й годовщины создания первого экспериментального комплекса противоракетной обороны (ПРО) нашей страны - Системы «А».<br><br> Такой противоракетой 04 марта 1961 года впервые в мире была уничтожена головная часть баллистической ракеты.<br><br> <br><br> Таким образом, было опровергнуто утверждение многих советских и зарубежных ученых о принципиальной невозможности поражения ракеты ракетой в космическом пространстве из-за их значительных относительных скоростей]]></data>
+  <data name="ru_spotpoint112_description"><![CDATA[<b>Памятник противоракете В-1000</b><br><br> Выносной крупногабаритный музейный экспонат установлен на территории школы в ознаменование 55-й годовщины создания первого экспериментального комплекса противоракетной обороны (ПРО) нашей страны - Системы «А».<br><br> Такой противоракетой 04 марта 1961 года впервые в мире была уничтожена головная часть баллистической ракеты.<br><br> <br><br> Таким образом, было опровергнуто утверждение многих советских и зарубежных ученых о принципиальной невозможности поражения ракеты ракетой в космическом пространстве из-за их значительных относительных скоростей]]></data>
 
 
 
-  <data name="ru_spotpoint109_description"><![CDATA[			<p align="left" style="line-height: 100%; margin-bottom: 0cm"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>Мемориальнаядоска Г.В. Кисунько</b></font></font></p><p align="left" style="line-height: 100%; margin-bottom: 0cm"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Бронзоваямемориальная доска Г.В. Кисунько</font></font></p><p align="center" style="line-height: 100%; margin-bottom: 0cm">			</p><p align="left" style="line-height: 100%; margin-bottom: 0cm"><a name="_GoBack"></a> <font face="Times New Roman, serif"><font style="font-size: 12pt">былаустановлена на здании школы 15марта 2012года</font></font></p>]]></data>
-  <data name="ru_spotpoint115_description"><![CDATA[			<p align="left" style="line-height: 100%; margin-bottom: 0cm"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>Мемориальнаядоска Г.В. Кисунько</b></font></font></p><p align="left" style="line-height: 100%; margin-bottom: 0cm"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Бронзоваямемориальная доска Г.В. Кисунько</font></font></p><p align="left" style="line-height: 100%; margin-bottom: 0cm"> <font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">былаустановлена на здании школы 15марта 2012года</font></font></p><p align="left" style="line-height: 100%; margin-bottom: 0.26cm; background: #ffffff"><br></p>]]></data>
+  <data name="ru_spotpoint109_description"><![CDATA[			<p align="left" style="line-height: 100%; margin-bottom: 0cm"><br></p>]]></data>
+  <data name="ru_spotpoint115_description"><![CDATA[			<br><br><b>Мемориальная доска Г.В. Кисунько</b><br><br>Бронзовая мемориальная доска Г.В. Кисунько<br><br>была установлена на здании школы 15марта 2012 года<br><br> <br> <br> <br><br> <br><br> <br>]]></data>
 
 
 
@@ -195,7 +195,8 @@
 
 
 
-  <data name="ru_spotpoint251_description"><![CDATA[			<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0cm"><font face="Calibri, serif"><font style="font-size: 11pt"><font face="Times New Roman, serif"><font style="font-size: 12pt">«Дон-2Н»- уникальная многофункциональнаярадиолокационная станция (МРЛС) круговогообзора. Главный конструктор – ГеройРоссийской Федерации Слока В.К. Станцияпредставляет собой четырехграннуюусеченную пирамиду высотой 33 м и длинойсторон 130 м у основания и 90 м по верхнемукраю. «Дон 2Н» предназначена для обороныМосквы и Московского региона.</font></font></font></font></p>]]></data>
+  <data name="ru_spotpoint251_description"><![CDATA[			<b>«Дон-2Н»</b>- уникальная многофункциональнаярадиолокационная станция (МРЛС) круговогообзора. Главный конструктор – ГеройРоссийской Федерации Слока В.К. Станцияпредставляет собой четырехграннуюусеченную пирамиду высотой 33 м и длинойсторон 130 м у основания и 90 м по верхнемукраю. «Дон 2Н» предназначена для обороныМосквы и Московского региона.]]></data>
+  <data name="ru_spotpoint347_description"><![CDATA[<b>Герб города </b><br> В начале второй половины XX века на скалистом берегу озера Балхаш вырос молодой город Приозерск. Населяли его испытатели противоракетного оружия, в честь которых назван наш музей, и их семьи. На гербе города - изображение тюльпана, покрывающего весной всю необъятную степь.]]></data>
 
 
 
