@@ -46,7 +46,7 @@
          frameheight="56"
          stopspotsequence="false"
          crop="0|0|56|56"
-         edge="center"
+         edge="bottom" ox="0" oy="0"
          onloaded="startspotanimation(0.1);"
          onhover="onhoverIconИнформация"
          onover="onoverIconИнформация"
@@ -1023,14 +1023,14 @@ resumeautorotation(forcehotspot);
 		<option name="bottomleft_radius" value="0" type="int" />
 		<option name="bottomright_radius" value="0" type="int" />
 		<option name="area_border_width" value="0" type="int" />
-		<option name="area_border_color" value="f2f2f2" type="string" />
+		<option name="area_border_color" value="625b55" type="string" />
 		<option name="area_border_alpha" value="1" type="float" />
 		<option name="padding" value="15" type="int" />
 		<option name="display_title" value="false" type="bool" />
 		<option name="close_displayed" value="false" type="bool" />
 		<option name="close_text" value="descriptiondisplay_close_text" type="string" />
 
-		<option name="overlay_displayed" value="false" type="bool" />
+		<option name="overlay_displayed" value="true" type="bool" />
 		<option name="overlay_color" value="000000" type="string" />
 		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
 
@@ -1057,17 +1057,29 @@ resumeautorotation(forcehotspot);
 
 <action name="openKolorArea_description">
 	ifnot(ptplugin[description].isOpen,
+		if(ptplugin[description].doNotDeleteMe,
+		set(ptplugin[description].currentCall, false);
+		set(ptplugin[description].doNotDeleteMe, false);
 		set(ptplugin[description].isOpen, true);
 		pauseautorotation(forceplugin);
 
 		js(showKolorArea(description, get(ptplugin[description].descID)));
-		events.dispatch(onremovedisplayedobject);
+		,
+			set(ptplugin[description].currentCall, true);
+			set(ptplugin[description].doNotDeleteMe, true);
+			events.dispatch(onremovedisplayedobject);
+			delayedcall(0.3,openKolorArea_description(););
+		);
 	);
 </action>
 
 <action name="closeKolorArea_description">
 	if(ptplugin[description].isOpen,
+		if(ptplugin[description].doNotDeleteMe,
+			set(ptplugin[description].doNotDeleteMe, false);
+		,
 		js(invokePluginFunction(description, closeKolorArea));
+		);
 	);
 </action>
 
@@ -1080,6 +1092,7 @@ resumeautorotation(forcehotspot);
 </action>
 
 <action name="closeKolorAreaCallback_description">
+	set(ptplugin[description].doNotDeleteMe, false);
 	if(ptplugin[description].isOpen,resumeautorotation(forceplugin);
 
 		
@@ -1103,20 +1116,32 @@ resumeautorotation(forcehotspot);
 	ifnot(ptplugin[description].startMethod == "",
 		delayedcall(0,get(ptplugin[description].startMethod));
 	,
+		if(ptplugin[description].doNotDeleteMe,
+			set(ptplugin[description].currentCall, false);
+			set(ptplugin[description].doNotDeleteMe, false);
 		set(ptplugin[description].isOpen, true);
 		pauseautorotation(forceplugin);
 
 		js(invokePluginFunction(description, showKolorArea, %1));
-		events.dispatch(onremovedisplayedobject);
+		,
+			set(ptplugin[description].currentCall, true);
+			set(ptplugin[description].doNotDeleteMe, true);
+			events.dispatch(onremovedisplayedobject);
+			delayedcall(0.3,showKolorArea_description(%1););
+		);
 	);
 </action>
 	
 <action name="hideKolorArea_description">
+	if(ptplugin[description].doNotDeleteMe,
+		set(ptplugin[description].doNotDeleteMe, false);
+	,
 	resumeautorotation(forceplugin);
 
 	
 	set(ptplugin[description].isOpen, false);
 	js(invokePluginFunction(description, hideKolorArea, %1));
+	);
 </action>
 
 <action name="openDescription_description">
@@ -1164,9 +1189,48 @@ resumeautorotation(forcehotspot);
 	keep="true"
 	onTourStart="set(ptplugin[description].canStart, true);if(ptplugin[description].openatstart,showTourInfo();
 );"
-	onhidetourinfo="if(ptplugin[description].isOpen,closeDescription_description(false););"
+	onhidetourinfo="delayedcall(0.3,if(ptplugin[description].isOpen,closeDescription_description(false);););"
+	onremovepano="if(ptplugin[description].isOpen,hideTourInfo();
+);"
+	onremovedisplayedobject="ifnot(ptplugin[description].currentCall,if(ptplugin[description].isOpen,hideTourInfo();
+););"
 	changetourlanguage="changeLanguage_description();"
 />
+
+<action name="setViewLittlePlanet">
+	set(sceneisfull360, false);
+	if(scene[get(xml.scene)].full360,
+		sub(viewhfov, panoview.hmax, panoview.hmin);
+		if (viewhfov == 360,
+			sub(viewvfov, panoview.vmax, panoview.vmin);
+			if (viewvfov == 180,
+				set(sceneisfull360, true);
+			);
+		);
+	);
+	if (sceneisfull360 AND (device.webgl OR device.flash),
+		if(normalViewActivated,stopSetViewTweens(););
+		if(current_view_isflat === true,
+			setViewNonFlat(VFOV);
+		);
+		setViewLittlePlanetComplete();
+	);
+</action>
+
+<action name="setViewLittlePlanetComplete">
+	set(backtonormalfirst,false);
+	if(view.pannini GE 1.0, set(backtonormalfirst,true));
+	if(view.stereographic == false, set(backtonormalfirst,true));
+	if(backtonormalfirst, hideTooltip();tween(view.fisheye, 0.0 ,distance(1.0, 0.25), easeOutQuad, WAIT); );
+	set(view.stereographic, true);
+	set(view.fisheyefovlink, 1.5);
+	tween(view.architectural, 0.0, 0.25);
+	tween(view.vlookat, 90, distance(179, 1.50));
+	tween(view.pannini, 0.0, distance(1.0, 0.75), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
+	if(panoview.fovmax LE 150, set(view.fovmax, 150); , set(view.fovmax, get(panoview.fovmax)); );
+	tween(view.fisheye, 1.0, distance(1.0, 0.75));
+	tween(view.fov, 150, distance(179, 0.75));
+</action>
 
 <action name="viewControlZoomIn">
 	if(%1,
@@ -1225,57 +1289,6 @@ resumeautorotation(forcehotspot);
   
   <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
 
-  <!-- Hide / Show Controls -->
-  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
-  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
-
-
-<action name="setViewFisheye">
-	set(sceneisfull360, false);
-	if(scene[get(xml.scene)].full360,
-		sub(viewhfov, panoview.hmax, panoview.hmin);
-		if (viewhfov == 360,
-			sub(viewvfov, panoview.vmax, panoview.vmin);
-			if (viewvfov == 180,
-				set(sceneisfull360, true);
-			);
-		);
-	);
-	if (sceneisfull360 AND (device.webgl OR device.flash),
-		if(normalViewActivated,stopSetViewTweens(););
-		if(current_view_isflat === true,
-			setViewNonFlat(VFOV);
-		);
-		setViewFisheyeComplete();
-	);
-</action>
-
-<action name="setViewFisheyeComplete">
-	set(view.fisheyefovlink, 1.5);
-	set(view.fovmax, get(panoview.fovmax));
-	tween(view.architectural, 0.0, distance(1.0, 0.30));
-	tween(view.fisheye, 0.0, distance(1.0, 0.30), easeOutQuad,
-		set(view.stereographic,false);
-		tween(view.fisheye, 0.45, distance(1.0, 0.75));
-		tween(view.vlookat, get(panoview.v), distance(90, 0.45));
-	);
-	tween(view.pannini, 0.0, distance(1.0, 0.75), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	tween(view.fov, get(panoview.fov), distance(50, 0.45));
-</action>
-
-  <action name="enableGyroscope">
-    changeGyroscopeState(true);
-  </action>
-  <action name="disableGyroscope">
-    changeGyroscopeState(false);
-  </action>
-
-
-  <!-- Tour Information -->
-  <action name="hideTourInfo">set(tour_displayinfo, false);events.dispatch(onhidetourinfo);</action>
-  <action name="showTourInfo">set(tour_displayinfo, true); events.dispatch(onshowtourinfo);</action>
-
-
 <action name="setViewArchitectural">
 	if(normalViewActivated,stopSetViewTweens(););
 	if(current_view_isflat === true,
@@ -1296,40 +1309,10 @@ resumeautorotation(forcehotspot);
 	tween(view.fov, get(panoview.fov), distance(50, 0.45));
 </action>
 
-<action name="setViewLittlePlanet">
-	set(sceneisfull360, false);
-	if(scene[get(xml.scene)].full360,
-		sub(viewhfov, panoview.hmax, panoview.hmin);
-		if (viewhfov == 360,
-			sub(viewvfov, panoview.vmax, panoview.vmin);
-			if (viewvfov == 180,
-				set(sceneisfull360, true);
-			);
-		);
-	);
-	if (sceneisfull360 AND (device.webgl OR device.flash),
-		if(normalViewActivated,stopSetViewTweens(););
-		if(current_view_isflat === true,
-			setViewNonFlat(VFOV);
-		);
-		setViewLittlePlanetComplete();
-	);
-</action>
+  <!-- Tour Information -->
+  <action name="hideTourInfo">set(tour_displayinfo, false);events.dispatch(onhidetourinfo);</action>
+  <action name="showTourInfo">set(tour_displayinfo, true); events.dispatch(onshowtourinfo);</action>
 
-<action name="setViewLittlePlanetComplete">
-	set(backtonormalfirst,false);
-	if(view.pannini GE 1.0, set(backtonormalfirst,true));
-	if(view.stereographic == false, set(backtonormalfirst,true));
-	if(backtonormalfirst, hideTooltip();tween(view.fisheye, 0.0 ,distance(1.0, 0.25), easeOutQuad, WAIT); );
-	set(view.stereographic, true);
-	set(view.fisheyefovlink, 1.5);
-	tween(view.architectural, 0.0, 0.25);
-	tween(view.vlookat, 90, distance(179, 1.50));
-	tween(view.pannini, 0.0, distance(1.0, 0.75), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	if(panoview.fovmax LE 150, set(view.fovmax, 150); , set(view.fovmax, get(panoview.fovmax)); );
-	tween(view.fisheye, 1.0, distance(1.0, 0.75));
-	tween(view.fov, 150, distance(179, 0.75));
-</action>
 
   <action name="displayImage">
     if (layer[displayedStandardImage],
@@ -1606,6 +1589,52 @@ resumeautorotation(forcehotspot);
 </action>
 <action name="viewControlMoveVertStop">
 	set(vlookat_moveforce, 0);
+</action>
+
+  <action name="enableGyroscope">
+    changeGyroscopeState(true);
+  </action>
+  <action name="disableGyroscope">
+    changeGyroscopeState(false);
+  </action>
+
+
+  <!-- Hide / Show Controls -->
+  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
+  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
+
+
+<action name="setViewFisheye">
+	set(sceneisfull360, false);
+	if(scene[get(xml.scene)].full360,
+		sub(viewhfov, panoview.hmax, panoview.hmin);
+		if (viewhfov == 360,
+			sub(viewvfov, panoview.vmax, panoview.vmin);
+			if (viewvfov == 180,
+				set(sceneisfull360, true);
+			);
+		);
+	);
+	if (sceneisfull360 AND (device.webgl OR device.flash),
+		if(normalViewActivated,stopSetViewTweens(););
+		if(current_view_isflat === true,
+			setViewNonFlat(VFOV);
+		);
+		setViewFisheyeComplete();
+	);
+</action>
+
+<action name="setViewFisheyeComplete">
+	set(view.fisheyefovlink, 1.5);
+	set(view.fovmax, get(panoview.fovmax));
+	tween(view.architectural, 0.0, distance(1.0, 0.30));
+	tween(view.fisheye, 0.0, distance(1.0, 0.30), easeOutQuad,
+		set(view.stereographic,false);
+		tween(view.fisheye, 0.45, distance(1.0, 0.75));
+		tween(view.vlookat, get(panoview.v), distance(90, 0.45));
+	);
+	tween(view.pannini, 0.0, distance(1.0, 0.75), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
+	tween(view.fov, get(panoview.fov), distance(50, 0.45));
 </action>
 
 </krpano>
