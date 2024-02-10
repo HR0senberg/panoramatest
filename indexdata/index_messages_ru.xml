@@ -96,24 +96,24 @@
 
 
 
-  <data name="ru_controlBar_dockedThumbnailszoomInTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailszoomOutTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsmoveLeftTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsmoveRightTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsmoveUpTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsmoveDownTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailshomeTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsopenFsTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailscloseFsTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsautotourOnTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsautotourOffTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsgyroOnTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsgyroOffTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsgyroNotTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsdisplayControlsTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailshideControlsTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsctrlmodeDragTip"><![CDATA[]]></data>
-  <data name="ru_controlBar_dockedThumbnailsctrlmodeMoveTip"><![CDATA[]]></data>
+  <data name="ru_controlBar_dockedThumbnailszoomInTip"><![CDATA[Zoom in]]></data>
+  <data name="ru_controlBar_dockedThumbnailszoomOutTip"><![CDATA[Zoom out]]></data>
+  <data name="ru_controlBar_dockedThumbnailsmoveLeftTip"><![CDATA[Move left]]></data>
+  <data name="ru_controlBar_dockedThumbnailsmoveRightTip"><![CDATA[Move right]]></data>
+  <data name="ru_controlBar_dockedThumbnailsmoveUpTip"><![CDATA[Move up]]></data>
+  <data name="ru_controlBar_dockedThumbnailsmoveDownTip"><![CDATA[Move down]]></data>
+  <data name="ru_controlBar_dockedThumbnailshomeTip"><![CDATA[Home]]></data>
+  <data name="ru_controlBar_dockedThumbnailsopenFsTip"><![CDATA[Enter fullscreen]]></data>
+  <data name="ru_controlBar_dockedThumbnailscloseFsTip"><![CDATA[Exit fullscreen]]></data>
+  <data name="ru_controlBar_dockedThumbnailsautotourOnTip"><![CDATA[Start automatic tour]]></data>
+  <data name="ru_controlBar_dockedThumbnailsautotourOffTip"><![CDATA[Stop automatic tour]]></data>
+  <data name="ru_controlBar_dockedThumbnailsgyroOnTip"><![CDATA[Enable gyroscope]]></data>
+  <data name="ru_controlBar_dockedThumbnailsgyroOffTip"><![CDATA[Disable gyroscope]]></data>
+  <data name="ru_controlBar_dockedThumbnailsgyroNotTip"><![CDATA[Gyroscope is unavailable]]></data>
+  <data name="ru_controlBar_dockedThumbnailsdisplayControlsTip"><![CDATA[Show controls]]></data>
+  <data name="ru_controlBar_dockedThumbnailshideControlsTip"><![CDATA[Hide controls]]></data>
+  <data name="ru_controlBar_dockedThumbnailsctrlmodeDragTip"><![CDATA[Change control mode]]></data>
+  <data name="ru_controlBar_dockedThumbnailsctrlmodeMoveTip"><![CDATA[Change control mode]]></data>
   <data name="ru_contextmenuopenwebsitelabel2"><![CDATA[Сайт виртуального тура ]]></data>
   <data name="ru_contextmenuwebsiteurl2"><![CDATA[]]></data>
   <data name="ru_contextmenuopenwebsitelabel3"><![CDATA[Сайт «Звезды в пустыне»]]></data>
@@ -155,61 +155,50 @@
 
 
 
-  <data name="ru_spotpoint112_description"><![CDATA[			<br><br><b>Памятник противоракете В-1000</b><br><br> Выносной крупногабаритный музейный экспонат установлен на территории школы в ознаменование 55-й годовщины создания первого экспериментального комплекса противоракетной обороны (ПРО) нашей страны - Системы «А».<br><br> Такой противоракетой 04 марта 1961 года впервые в мире была уничтожена головная часть баллистической ракеты.<br><br> Таким образом, было опровергнуто утверждение многих советских и зарубежных ученых о принципиальной невозможности поражения ракеты ракетой в космическом пространстве из-за их значительных относительных скоростей]]></data>
+  <data name="ru_spotpoint112_description"><![CDATA[			<br><br><b>Памятник противоракете В-1000</b><br><br> Выносной крупногабаритный музейный экспонат установлен на территории школы в ознаменование 55-й годовщины создания первого экспериментального комплекса противоракетной обороны (ПРО) нашей страны - Системы «А».<br><br> Такой противоракетой 04 марта 1961 года впервые в мире была уничтожена головная часть баллистической ракеты.<br><br> <br><br> Таким образом, было опровергнуто утверждение многих советских и зарубежных ученых о принципиальной невозможности поражения ракеты ракетой в космическом пространстве из-за их значительных относительных скоростей]]></data>
 
 
 
-  <data name="ru_spotpoint109_description"><![CDATA[			<p align="left" style="line-height: 100%; margin-bottom: 0cm"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>Мемориальная доска Г.В. Кисунько</b></font></font></p><p align="left" style="line-height: 100%; margin-bottom: 0cm"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Бронзовая мемориальная доска Г.В. Кисунько</font></font></p><p align="center" style="line-height: 100%; margin-bottom: 0cm">			</p><p align="left" style="line-height: 100%; margin-bottom: 0cm"><a name="_GoBack"></a> <font face="Times New Roman, serif"><font style="font-size: 12pt">была установлена на здании школы 15марта 2012 года</font></font></p>]]></data>
-  <data name="ru_spotpoint115_description"><![CDATA[			<br><br><b>Мемориальная доска Г.В. Кисунько <br></b><br>Бронзовая мемориальная доска Г.В. Кисунько <br><br> была установлена на здании школы 15марта 2012 года <br><br> <br><p align="left" style="line-height: 108%; margin-bottom: 0.28cm"><a name="_GoBack"></a><br><br></p>]]></data>
-
-
-
-
-
-
-  <data name="ru_spotpoint125_description"><![CDATA[			<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0cm">			</p>Результат воздействия лазера на кирпич <br><br>В 60-70-е годы прошлого века в нашей стране и за рубежом начались работы по созданию систем противовоздушной обороны на новых физических принципах, способных сжечь воздушную цель с помощью высокоэнергетического лазерного луча. <br><br>В 1964 году советским ученым А. Прохорову и <br><br>Н. Басову была присуждена Нобелевская премия по физике за создание лазера. <br><br>Вы видите кирпич с результатами воздействия на него лазерного луча. На кирпиче надпись: «Если кто придет с мечом, с ним станет то, что стало с кирпичом!» <br><br><br> <br>]]></data>
+  <data name="ru_spotpoint109_description"><![CDATA[			<p align="left" style="line-height: 100%; margin-bottom: 0cm"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>Мемориальнаядоска Г.В. Кисунько</b></font></font></p><p align="left" style="line-height: 100%; margin-bottom: 0cm"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Бронзоваямемориальная доска Г.В. Кисунько</font></font></p><p align="center" style="line-height: 100%; margin-bottom: 0cm">			</p><p align="left" style="line-height: 100%; margin-bottom: 0cm"><a name="_GoBack"></a> <font face="Times New Roman, serif"><font style="font-size: 12pt">былаустановлена на здании школы 15марта 2012года</font></font></p>]]></data>
+  <data name="ru_spotpoint115_description"><![CDATA[			<p align="left" style="line-height: 100%; margin-bottom: 0cm"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>Мемориальнаядоска Г.В. Кисунько</b></font></font></p><p align="left" style="line-height: 100%; margin-bottom: 0cm"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Бронзоваямемориальная доска Г.В. Кисунько</font></font></p><p align="left" style="line-height: 100%; margin-bottom: 0cm"> <font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">былаустановлена на здании школы 15марта 2012года</font></font></p><p align="left" style="line-height: 100%; margin-bottom: 0.26cm; background: #ffffff"><br></p>]]></data>
 
 
 
 
 
 
-
-
-
-  <data name="ru_spotpoint359_description"><![CDATA[<b>Главный конструктор <br></b><br> Известно, что все, кто служил и работал на Балхашском полигоне противоракетной обороны, занимались самым важным делом в своей жизни. Они испытывали технику, обладание которой служило гарантией безопасности огромного государства. <br><br> Первый экспериментальный комплекс противоракетной обороны, Система «А», создавалась и проходила отработку под руководством Главного конструктора Кисунько Григория Васильевича. <br><br>]]></data>
-  <data name="ru_spotpoint369_description"><![CDATA[<b>МИГ-19 </b><br><br> На Балхашском полигоне была сформирована и укомплектована 60-я авиационная дивизия. Уникальность дивизии заключалась в том, что на ее вооружении в разные годы состояло несколько десятков типов самолетов, вертолетов и радиоуправляемых самолетов-мишеней. <br><br> Авиационные средства широко использовались в ходе проведения испытаний противоракетной и противосамолетной обороны.]]></data>
-
-
-
-  <data name="ru_spotpoint358_description"><![CDATA[<b>Создатели ПРО </b><br><br> Государственный научно-исследовательский испытательный полигон № 10 Министерства обороны СССР располагался в городе Приозерске Казахской ССР на берегу озера Балхаш. На полигоне проводились испытания первой отечественной противоракеты, способной на огромной скорости в бескрайнем космическом пространстве уничтожить межконтинентальную баллистическую ракету вероятного противника. <br><br> Все основатели полигона были участниками <br>Великой Отечественной войны. <br><br><b> Верхний ряд портретов – начальники полигона <br><br> Нижний ряд – первые создатели средств и систем ПРО</b>]]></data>
-  <data name="ru_spotpoint365_description"><![CDATA[<b>Памятник испытателям полигона&nbsp;</b><br><br>Памятник известного в нашей стране скульптора-монументалиста А.Е. Абалакова украшает центральный въезд на 40-ю площадку Государственного научно-исследовательского испытательного полигона № 10 Министерства обороны СССР в городе Приозерске. Уменьшенная её копия представлена в музее]]></data>
-  <data name="ru_spotpoint367_description"><![CDATA[<b>Обломок баллистической ракеты </b><br><br> Обломок был найден в степи «специальной группой поиска» после очередного испытательного пуска противоракеты]]></data>
-  <data name="ru_spotpoint368_description"><![CDATA[<b>Макет фрагмента антенно-фидерного устройства (АФУ) </b><br><br> Один из самых больших экспонатов нашего музея напоминает тарелку, похожую на спутниковую антенну вашего телевизора. На самом деле, это фрагмент составной части радиолокатора точного наведения, который служил главным инструментом для определения координат цели противоракеты.]]></data>
-
-
-
-  <data name="ru_spotpoint364_description"><![CDATA[<b>Памятник испытателям полигона </b><br><br> Памятник известного в нашей стране скульптора-монументалиста А.Е. Абалакова украшает центральный въезд на 40-ю площадку Государственного научно-исследовательского испытательного полигона № 10 Министерства обороны СССР в городе Приозерске. Уменьшенная её копия представлена в музее]]></data>
+  <data name="ru_spotpoint125_description"><![CDATA[			<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0cm"><font face="Calibri, serif"><font style="font-size: 11pt"><font face="Times New Roman, serif"><font style="font-size: 12pt"><b>Результатвоздействия лазера на кирпич</b></font></font></font></font></p><p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0cm"><font face="Calibri, serif"><font style="font-size: 11pt"><font face="Times New Roman, serif"><font style="font-size: 12pt">В60-70-е годы прошлого века в нашей странеи за рубежом начались работы по созданиюсистем противовоздушной обороны нановых физических принципах, способныхсжечь воздушную цель с помощьювысокоэнергетического лазерного луча.</font></font></font></font></p>]]></data>
 
 
 
 
 
 
-  <data name="ru_spotpoint366_description"><![CDATA[<b>Картины Юлия Цукова </b><br><br> Картины «Парный пуск» и «Перехват» <br>написал ветеран полигона первой волны испытателей, полковник, рационализатор и изобретатель, кандидат технических наук, автор многих научных работ и публикаций, поэт и художник Юлий Цуков <br><br>]]></data>
 
 
 
-  <data name="ru_spotpoint361_description"><![CDATA[<b>Ключ от полигона</b><br><br> Балхашский полигон, площадью 75 000 кв. км., был основан 30 июля 1956 года в казахской пустыне Бетпак-Дала для проведения испытаний систем ПРО и ПВО. Символический ключ от полигона был вручен командиру войсковой части 03080 генерал-лейтенанту Спиридонову Е.К в 1980 году и впоследствии передан в музей его сыном.<br><br> <br><br>]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
   <data name="ru_spotpoint251_description"><![CDATA[			<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0cm"><font face="Calibri, serif"><font style="font-size: 11pt"><font face="Times New Roman, serif"><font style="font-size: 12pt">«Дон-2Н»- уникальная многофункциональнаярадиолокационная станция (МРЛС) круговогообзора. Главный конструктор – ГеройРоссийской Федерации Слока В.К. Станцияпредставляет собой четырехграннуюусеченную пирамиду высотой 33 м и длинойсторон 130 м у основания и 90 м по верхнемукраю. «Дон 2Н» предназначена для обороныМосквы и Московского региона.</font></font></font></font></p>]]></data>
-  <data name="ru_spotpoint362_description"><![CDATA[<b>Герб города</b> <br><br> В начале второй половины XX века на скалистом берегу озера Балхаш вырос молодой город Приозерск. Населяли его испытатели противоракетного оружия, в честь которых назван наш музей, и их семьи. На гербе города - изображение тюльпана, покрывающего весной всю необъятную степь. <br><br>]]></data>
 
 
 
-  <data name="ru_spotpoint363_description"><![CDATA[			<br><br><b>"Возвращение в родную гавань"</b><br><br> Китель Героя Социалистического Труда, генерал-лейтенанта Григория Васильевича Кисунько, <br>совершив путешествие длиной свыше 6 000 километров и продолжительностью в 22 года, занял свое законное место в музее «Звезды в пустыне». Китель возвратился в Москву из Музея войсковой части 03080 города Приозерска Казахской ССР.]]></data>
 
 
 
