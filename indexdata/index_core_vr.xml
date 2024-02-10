@@ -155,6 +155,9 @@
       set(tour_autorotation_pausecounter, 0);
       events.dispatch(onstartautorotation);
 
+      if(tour_autotourenabled,
+        resetautotourvariables();
+      );
     );
   </action>
   <action name="stopautorotation">
@@ -162,6 +165,9 @@
     set(autorotate.enabled, false);
     events.dispatch(onstopautorotation);
 
+    if(tour_autotourenabled,
+      stopautotourtimer();
+    );
   </action>
   <action name="pauseautorotation">
     if(%1 == forceplugin,
@@ -172,6 +178,9 @@
       set(autorotate.enabled, false);
       events.dispatch(onpauseautorotation);
 
+      if(tour_autotourenabled AND useautotourdelay == false,
+        stopautotourtimer();
+      );
     );
   </action>
   <action name="resumeautorotation">
@@ -193,6 +202,9 @@
           set(autorotate.enabled, true);
           events.dispatch(onresumeautorotation);
 
+          if(tour_autotourenabled,
+            resetautotourvariables();
+          );
         );
       );
     ,
@@ -205,6 +217,9 @@
 
           set(forceAutorotationFromPluginUnload, false);
           if(action['autorotationatstart'],
+            set(forceAutorotationFromPluginUnload, true);
+          );
+          if(action['autotouratstart'],
             set(forceAutorotationFromPluginUnload, true);
           );
           if(forceAutorotationFromPluginUnload,

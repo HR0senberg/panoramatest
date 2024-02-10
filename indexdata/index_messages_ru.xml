@@ -21,7 +21,7 @@
   <data name="ru_pano116_title"><![CDATA[3Вход в музей. Общий вид. Выход из музея]]></data>
   <data name="ru_spotpoint118_tooltip"><![CDATA[2. Вход в школу]]></data>
   <data name="ru_spotpoint122_tooltip"><![CDATA[4Результат воздействия лазера на кирпич]]></data>
-  <data name="ru_spotpoint237_tooltip"><![CDATA[15]]></data>
+  <data name="ru_spotpoint237_tooltip"><![CDATA[15ОБЩИй ФОН]]></data>
 
 
   <data name="ru_pano119_title"><![CDATA[4Результат воздействия лазера на кирпич]]></data>
@@ -65,33 +65,33 @@
 
 
   <data name="ru_pano152_title"><![CDATA[12Ключ от полигона]]></data>
-  <data name="ru_spotpoint159_tooltip"><![CDATA[13 ДОН-2Н]]></data>
+  <data name="ru_spotpoint159_tooltip"><![CDATA[13ДОН]]></data>
   <data name="ru_spotpoint241_tooltip"><![CDATA[11Картины Юлия Цукова]]></data>
 
 
-  <data name="ru_pano156_title"><![CDATA[13 ДОН-2Н]]></data>
-  <data name="ru_spotpoint231_tooltip"><![CDATA[14 Возвращение в родную гавань]]></data>
-  <data name="ru_spotpoint240_tooltip"><![CDATA[12Ключ от полигона]]></data>
-
-
   <data name="ru_pano160_title"><![CDATA[14 Возвращение в родную гавань]]></data>
-  <data name="ru_spotpoint235_tooltip"><![CDATA[15]]></data>
-  <data name="ru_spotpoint239_tooltip"><![CDATA[13 ДОН-2Н]]></data>
+  <data name="ru_spotpoint235_tooltip"><![CDATA[15ОБЩИй ФОН]]></data>
+  <data name="ru_spotpoint239_tooltip"><![CDATA[13ДОН]]></data>
 
 
-  <data name="ru_pano232_title"><![CDATA[15]]></data>
-  <data name="ru_spotpoint236_tooltip"><![CDATA[3Вход в музей. Общий вид. Выход из музея]]></data>
-  <data name="ru_spotpoint238_tooltip"><![CDATA[14 Возвращение в родную гавань]]></data>
+  <data name="ru_pano455_title"><![CDATA[15ОБЩИй ФОН]]></data>
+  <data name="ru_spotpoint461_tooltip"><![CDATA[14 Возвращение в родную гавань]]></data>
+  <data name="ru_spotpoint462_tooltip"><![CDATA[3Вход в музей. Общий вид. Выход из музея]]></data>
 
 
-	<data name="ru_spotmap335_tooltip"><![CDATA[1.Памятник противоракете В-1000]]></data>
-	<data name="ru_spotmap336_tooltip"><![CDATA[4Результат воздействия лазера на кирпич]]></data>
-	<data name="ru_spotmap337_tooltip"><![CDATA[6Москва-Приозерск (2)]]></data>
-	<data name="ru_spotmap338_tooltip"><![CDATA[7Главный конструктор]]></data>
-	<data name="ru_spotmap339_tooltip"><![CDATA[11Картины Юлия Цукова]]></data>
-	<data name="ru_spotmap340_tooltip"><![CDATA[12Ключ от полигона]]></data>
-	<data name="ru_spotmap341_tooltip"><![CDATA[13 ДОН-2Н]]></data>
-	<data name="ru_spotmap342_tooltip"><![CDATA[15]]></data>
+  <data name="ru_pano458_title"><![CDATA[13ДОН]]></data>
+  <data name="ru_spotpoint463_tooltip"><![CDATA[12Ключ от полигона]]></data>
+  <data name="ru_spotpoint464_tooltip"><![CDATA[14 Возвращение в родную гавань]]></data>
+
+
+	<data name="ru_spotmap447_tooltip"><![CDATA[1.Памятник противоракете В-1000]]></data>
+	<data name="ru_spotmap448_tooltip"><![CDATA[4Результат воздействия лазера на кирпич]]></data>
+	<data name="ru_spotmap449_tooltip"><![CDATA[6Москва-Приозерск (2)]]></data>
+	<data name="ru_spotmap450_tooltip"><![CDATA[7Главный конструктор]]></data>
+	<data name="ru_spotmap451_tooltip"><![CDATA[11Картины Юлия Цукова]]></data>
+	<data name="ru_spotmap452_tooltip"><![CDATA[12Ключ от полигона]]></data>
+	<data name="ru_spotmap457_tooltip"><![CDATA[15ОБЩИй ФОН]]></data>
+	<data name="ru_spotmap460_tooltip"><![CDATA[13ДОН]]></data>
 
 
 
@@ -195,8 +195,6 @@
 
 
 
-  <data name="ru_spotpoint251_description"><![CDATA[			<b>«Дон-2Н»</b>- уникальная многофункциональнаярадиолокационная станция (МРЛС) круговогообзора. Главный конструктор – ГеройРоссийской Федерации Слока В.К. Станцияпредставляет собой четырехграннуюусеченную пирамиду высотой 33 м и длинойсторон 130 м у основания и 90 м по верхнемукраю. «Дон 2Н» предназначена для обороныМосквы и Московского региона.]]></data>
-  <data name="ru_spotpoint347_description"><![CDATA[<b>Герб города </b><br> В начале второй половины XX века на скалистом берегу озера Балхаш вырос молодой город Приозерск. Населяли его испытатели противоракетного оружия, в честь которых назван наш музей, и их семьи. На гербе города - изображение тюльпана, покрывающего весной всю необъятную степь.]]></data>
 
 
 
