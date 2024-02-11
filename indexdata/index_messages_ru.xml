@@ -85,21 +85,21 @@
   <data name="ru_spotpoint464_tooltip"><![CDATA[14.Переход]]></data>
 
 
-	<data name="ru_spotmap585_tooltip"><![CDATA[1.Переход]]></data>
-	<data name="ru_spotmap586_tooltip"><![CDATA[4.Переход]]></data>
-	<data name="ru_spotmap587_tooltip"><![CDATA[6.Переход]]></data>
-	<data name="ru_spotmap588_tooltip"><![CDATA[7.Переход]]></data>
-	<data name="ru_spotmap589_tooltip"><![CDATA[11.Переход]]></data>
-	<data name="ru_spotmap590_tooltip"><![CDATA[12.Переход]]></data>
-	<data name="ru_spotmap591_tooltip"><![CDATA[15.Переход]]></data>
-	<data name="ru_spotmap592_tooltip"><![CDATA[13.Переход]]></data>
-	<data name="ru_spotmap660_tooltip"><![CDATA[14.Переход]]></data>
+	<data name="ru_spotmap863_tooltip"><![CDATA[1.Переход]]></data>
+	<data name="ru_spotmap864_tooltip"><![CDATA[4.Переход]]></data>
+	<data name="ru_spotmap865_tooltip"><![CDATA[6.Переход]]></data>
+	<data name="ru_spotmap866_tooltip"><![CDATA[7.Переход]]></data>
+	<data name="ru_spotmap867_tooltip"><![CDATA[11.Переход]]></data>
+	<data name="ru_spotmap868_tooltip"><![CDATA[12.Переход]]></data>
+	<data name="ru_spotmap869_tooltip"><![CDATA[14.Переход]]></data>
+	<data name="ru_spotmap870_tooltip"><![CDATA[15.Переход]]></data>
+	<data name="ru_spotmap871_tooltip"><![CDATA[13.Переход]]></data>
 
 
 
 
-  <data name="ru_controlBar_dockedThumbnailsprevSceneTip"><![CDATA[Previous panorama]]></data>
-  <data name="ru_controlBar_dockedThumbnailsnextSceneTip"><![CDATA[Next panorama]]></data>
+  <data name="ru_controlBar_dockedThumbnailsprevSceneTip"><![CDATA[]]></data>
+  <data name="ru_controlBar_dockedThumbnailsnextSceneTip"><![CDATA[]]></data>
   <data name="ru_controlBar_dockedThumbnailszoomInTip"><![CDATA[]]></data>
   <data name="ru_controlBar_dockedThumbnailszoomOutTip"><![CDATA[]]></data>
   <data name="ru_controlBar_dockedThumbnailsmoveLeftTip"><![CDATA[]]></data>
